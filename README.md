@@ -33,7 +33,7 @@ Disk Usage: Filesystem      Size  Used Avail Use% Mounted on /dev/sda1        20
 ```bash
 #!/bin/bash
 
-# In the name of Allah the most graciuos and the most mercifull (Alhamdulillah) 
+# In the name of Allah the most graciuos and the most mercifull God(Alhamdulillah) 
 
 # Create log directory if it doesn't exist
 LOG_DIR="/home/$USER/system_logs"
@@ -85,11 +85,10 @@ Add the following line to run the script daily at 9 AM:
 
 > Replace yourusername with your actual username.
 
-
 ## Result (ScreenShot)
 
-![screen Shot for PoC](project.png)
-
+![screenShot for PoC](project.png)
+---
 
 
 ## 🌟 Future Improvements
