@@ -33,8 +33,14 @@ Disk Usage: Filesystem      Size  Used Avail Use% Mounted on /dev/sda1        20
 ```bash
 #!/bin/bash
 
+# In the name of Allah the most graciuos and the most mercifull (Alhamdulillah) 
+
+# Create log directory if it doesn't exist
+LOG_DIR="/home/$USER/system_logs"
+mkdir -p "$LOG_DIR"
+
 # File path with today's date
-LOG_FILE="/home/$USER/system_logs_$(date +%F).log"
+LOG_FILE="$LOG_DIR/system_logs_$(date +%F).log"
 
 echo "System Report - $(date)" >> $LOG_FILE
 echo "-------------------------" >> $LOG_FILE
@@ -78,6 +84,11 @@ Add the following line to run the script daily at 9 AM:
 ``0 9 * * * /home/yourusername/system_info.sh``
 
 > Replace yourusername with your actual username.
+
+
+## Result (ScreenShot)
+
+![screen Shot for PoC](project.png)
 
 
 
